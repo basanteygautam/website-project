@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kathmandu - Tourism Website</title>
+    <link rel="stylesheet" href="/static/cities.css" />
+    <link
+      rel="stylesheet"
+      a
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+
+        <div class="logo">
+          <img src="/static/images/logo.png" alt="Tourism Logo" class="logo" />
+        </div>
+
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="kathmandu.html">Kathmandu</a></li>
+          <li><a href="pokhara.html">Pokhara</a></li>
+          <li><a href="Butwal.html">Butwal</a></li>
+          <li><a href="chitwan.html">Chitwan</a></li>
+          <li><a href="Parbat.html">Parbat</a></li>
+          <li><a href="mustang.html">Mustang</a></li>
+          <li><a href="bhaktapur.html">Bhaktapur</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0);" class="dropbtn">Contact Me</a>
+            <div class="dropdown-content">
+              <a href="mailto:neuankit951@gmail.com">Email Us</a>
+              <a href="tel:+9847134287">Call Now</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section id="mustang">
+      <h2>Mustang</h2>
+      <div class="container-wrapper">
+        <div class="destination-container">
+          <h3>Hotels</h3>
+          <div class="hotel">
+            <h4>Lo Mustang Himalayan Resort</h4>
+            <img
+              src="/static/images/Mustang.webp"
+              alt="Himalayan"
+              class="destination-image"
+            />
+            <p>Price: $139/night</p>
+
+            <form action="https://formspree.io/f/xnnjwgek" method="POST">
+              <label for="email">Enter Your Email:</label>
+              <input
+                type="email"
+                name="email"
+                id="email-Himalayan"
+                required
+                placeholder="Your Email"
+              />
+
+              <label for="date-Himalayan">Select Date:</label>
+              <input type="date" name="date" id="date-Himalayan" required />
+
+              <label for="time-Himalayan">Select Time:</label>
+              <input type="time" name="time" id="time-Himalayan" required />
+
+              <label for="room-type-himalayan">Type of Room:</label>
+              <select name="room_type" id="room-type-himalayan" required>
+                <option value="" disabled selected>Select Room Type</option>
+                <option value="single">Single Bed</option>
+                <option value="double">Double Bed</option>
+              </select>
+
+              <label for="rooms-himalayan">Number of Rooms:</label>
+              <input
+                type="number"
+                name="rooms"
+                id="rooms-himalayan"
+                min="1"
+                value="1"
+                required
+              />
+
+              <label for="people-himalayan">Total People:</label>
+              <input
+                type="number"
+                name="people"
+                id="people-hyatt"
+                min="1"
+                value="1"
+                required
+              />
+
+              <button type="submit">Book Now</button>
+            </form>
+
+            <button
+              class="view-map"
+              onclick="openMap('https://maps.app.goo.gl/KWi21BU9cRXgNfDF8')"
+            >
+              Map
+            </button>
+          </div>
+
+          <div class="hotel">
+            <h4>Oms Home Jomsom</h4>
+            <img
+              src="/static/images/omshotel.webp"
+              alt="omshotel"
+              class="destination-image"
+            />
+            <p>Price: $100/night</p>
+
+            <form action="https://formspree.io/f/xnnjwgek" method="POST">
+              <label for="email">Enter Your Email:</label>
+              <input
+                type="email"
+                name="email"
+                id="email-oms"
+                required
+                placeholder="Your Email"
+              />
+
+              <label for="date-oms">Select Date:</label>
+              <input type="date" name="date" id="date-oms" required />
+
+              <label for="time-oms">Select Time:</label>
+              <input type="time" name="time" id="time-oms" required />
+
+              <label for="room-type-oms">Type of Room:</label>
+              <select name="room_type" id="room-type-oms" required>
+                <option value="" disabled selected>Select Room Type</option>
+                <option value="single">Single Bed</option>
+                <option value="double">Double Bed</option>
+              </select>
+
+              <label for="rooms-oms">Number of Rooms:</label>
+              <input
+                type="number"
+                name="rooms"
+                id="rooms-oms"
+                min="1"
+                value="1"
+                required
+              />
+
+              <label for="people-oms">Total People:</label>
+              <input
+                type="number"
+                name="people"
+                id="people-oms"
+                min="1"
+                value="1"
+                required
+              />
+
+              <button type="submit">Book Now</button>
+            </form>
+
+            <button
+              class="view-map"
+              onclick="openMap('https://maps.app.goo.gl/1w5xHfh1d7ACy5Lp7')"
+            >
+              Map
+            </button>
+          </div>
+        </div>
+        <div class="new-container">
+          <h3>Attractions</h3>
+          <div class="attraction">
+            <h4>Muktinath temple</h4>
+            <img
+              src="/static/images/muktinath.jpg"
+              alt="muktinath temple"
+              class="attraction-image"
+            />
+            <button
+              class="view-map"
+              onclick="openMap('https://maps.app.goo.gl/eCKKiEsvfMzxk5y17')"
+            >
+              Open in Maps
+            </button>
+          </div>
+          <div class="attraction">
+            <h4>Kagbeni</h4>
+            <img
+              src="/static/images/kagbeni.jpg"
+              alt="kagbeni"
+              class="attraction-image"
+            />
+            <button
+              class="view-map"
+              onclick="openMap('https://maps.app.goo.gl/WWZLJ7hUq7qYmSrz6')"
+            >
+              Open in Maps
+            </button>
+          </div>
+          <div class="attraction">
+            <h4>Marpha</h4>
+            <img
+              src="/static/images/marpha.jpg"
+              alt="marpha"
+              class="attraction-image"
+            />
+            <button
+              class="view-map"
+              onclick="openMap('https://maps.app.goo.gl/3gSLuVJS55aibMrM6')"
+            >
+              Open in Maps
+            </button>
+          </div>
+          <div class="attraction">
+            <h4>Jomsom</h4>
+            <img
+              src="/static/images/jomson.png"
+              alt="Jomsom"
+              class="attraction-image"
+            />
+            <button
+              class="view-map"
+              onclick="openMap('https://maps.app.goo.gl/cAmwMEdo3dM41T5HA')"
+            >
+              Open in Maps
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <img
+          src="/static/images/logo.png"
+          alt="Tourism Logo"
+          class="footer-logo"
+        />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="kathmandu.html">Kathmandu</a></li>
+          <li><a href="pokhara.html">Pokhara</a></li>
+          <li><a href="Butwal.html">Butwal</a></li>
+          <li><a href="chitwan.html">Chitwan</a></li>
+          <li><a href="Parbat.html">Parbat</a></li>
+          <li><a href="mustang.html">Mustang</a></li>
+          <li><a href="bhaktapur.html">Bhaktapur</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0);" class="dropbtn">Contact Me</a>
+            <div class="dropdown-content">
+              <a href="mailto:neuankit951@gmail.com">Email Us</a>
+              <a href="tel:+9847134287">Call Now</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <p>&copy; 2025 Explore Nepal. All Rights Reserved.</p>
+    </footer>
+    <script>
+      function openMap(url) {
+        window.open(url, "_blank");
+      }
+    </script>
+  </body>
+</html>

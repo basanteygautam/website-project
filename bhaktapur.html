@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bhaktapur - Tourism Website</title>
+    <link rel="stylesheet" href="/static/cities.css" />
+    <link
+      rel="stylesheet"
+      a
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+
+        <div class="logo">
+          <img src="/static/images/logo.png" alt="Tourism Logo" class="logo" />
+        </div>
+
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="kathmandu.html">Kathmandu</a></li>
+          <li><a href="pokhara.html">Pokhara</a></li>
+          <li><a href="Butwal.html">Butwal</a></li>
+          <li><a href="chitwan.html">Chitwan</a></li>
+          <li><a href="Parbat.html">Parbat</a></li>
+          <li><a href="mustang.html">Mustang</a></li>
+          <li><a href="bhaktapur.html">Bhaktapur</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0);" class="dropbtn">Contact Me</a>
+            <div class="dropdown-content">
+              <a href="mailto:neuankit951@gmail.com">Email Us</a>
+              <a href="tel:+9847134287">Call Now</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section id="Bhaktapur">
+      <h2>Bhaktapur</h2>
+      <div class="container-wrapper">
+        <div class="destination-container">
+          <h3>Hotels</h3>
+          <div class="hotel">
+            <h4>Tulaja Boutique Hotel</h4>
+            <img
+              src="/static/images/bhaktapur.jpg"
+              alt="Harness"
+              class="destination-image"
+            />
+            <p>Price: $20.91/night</p>
+
+            <form action="https://formspree.io/f/xnnjwgek" method="POST">
+              <label for="email">Enter Your Email:</label>
+              <input
+                type="email"
+                name="email"
+                id="email-tulaja"
+                required
+                placeholder="Your Email"
+              />
+
+              <label for="date-tulaja">Select Date:</label>
+              <input type="date" name="date" id="date-tulaja" required />
+
+              <label for="time-tulaja">Select Time:</label>
+              <input type="time" name="time" id="time-tulaja" required />
+
+              <label for="room-type-tulaja">Type of Room:</label>
+              <select name="room_type" id="room-type-tulaja" required>
+                <option value="" disabled selected>Select Room Type</option>
+                <option value="single">Single Bed</option>
+                <option value="double">Double Bed</option>
+              </select>
+
+              <label for="rooms-tulaja">Number of Rooms:</label>
+              <input
+                type="number"
+                name="rooms"
+                id="rooms-tulaja"
+                min="1"
+                value="1"
+                required
+              />
+
+              <label for="people-tulaja">Total People:</label>
+              <input
+                type="number"
+                name="people"
+                id="people-tulaja"
+                min="1"
+                value="1"
+                required
+              />
+
+              <button type="submit">Book Now</button>
+            </form>
+
+            <button
+              class="view-map"
+              onclick="openMap('https://maps.app.goo.gl/sQ6CRNHpPK5pQo2b9')"
+            >
+              Map
+            </button>
+          </div>
+
+          <div class="hotel">
+            <h4>Hotel Bhadgaon</h4>
+            <img
+              src="/static/images/bhaktapur bhadgaon.jpg"
+              alt="bhadgaon"
+              class="destination-image"
+            />
+            <p>Price: $81.25/night</p>
+
+            <form action="https://formspree.io/f/xnnjwgek" method="POST">
+              <label for="email">Enter Your Email:</label>
+              <input
+                type="email"
+                name="email"
+                id="email-bhadgaon"
+                required
+                placeholder="Your Email"
+              />
+
+              <label for="date-bhadgaon">Select Date:</label>
+              <input type="date" name="date" id="date-bhadgaon" required />
+
+              <label for="time-bhadgaon">Select Time:</label>
+              <input type="time" name="time" id="time-bhadgaon" required />
+
+              <label for="room-type-bhadgaon">Type of Room:</label>
+              <select name="room_type" id="room-type-bhadgaon" required>
+                <option value="" disabled selected>Select Room Type</option>
+                <option value="single">Single Bed</option>
+                <option value="double">Double Bed</option>
+              </select>
+
+              <label for="rooms-bhadgaon">Number of Rooms:</label>
+              <input
+                type="number"
+                name="rooms"
+                id="rooms-bhadgaon"
+                min="1"
+                value="1"
+                required
+              />
+
+              <label for="bhadgaon">Total People:</label>
+              <input
+                type="number"
+                name="people"
+                id="bhadgaon"
+                min="1"
+                value="1"
+                required
+              />
+
+              <button type="submit">Book Now</button>
+            </form>
+
+            <button
+              class="view-map"
+              onclick="openMap('https://maps.app.goo.gl/XP73WTdZUAogkrSG7')"
+            >
+              Map
+            </button>
+          </div>
+        </div>
+        <div class="new-container">
+          <h3>Attractions</h3>
+          <div class="attraction">
+            <h4>Bhaktapur Durbar Square</h4>
+            <img
+              src="/static/images/bhaktapur darbar square.jpg"
+              alt="Mahasila"
+              class="attraction-image"
+            />
+            <button
+              class="view-map"
+              onclick="openMap('https://maps.app.goo.gl/wCpaqnJS72THFXNi7')"
+            >
+              Open in Maps
+            </button>
+          </div>
+          <div class="attraction">
+            <h4>Nyatapola Temple</h4>
+            <img
+              src="/static/images/Nyatapola Temple.jpg"
+              alt="Nyatapola Temple"
+              class="attraction-image"
+            />
+            <button
+              class="view-map"
+              onclick="openMap('https://maps.app.goo.gl/P2eggMYoZPDZxBaY6')"
+            >
+              Open in Maps
+            </button>
+          </div>
+          <div class="attraction">
+            <h4>55 Window Palace</h4>
+            <img
+              src="/static/images/55 Window Palace.jpg"
+              alt="55 Window Palace"
+              class="attraction-image"
+            />
+            <button
+              class="view-map"
+              onclick="openMap('https://maps.app.goo.gl/1f9eJcpCVopPRr3Y9')"
+            >
+              Open in Maps
+            </button>
+          </div>
+          <div class="attraction">
+            <h4>Siddha Pokhari</h4>
+            <img
+              src="/static/images/Siddha Pokhari.jpg"
+              alt="Siddha Pokhari"
+              class="attraction-image"
+            />
+            <button
+              class="view-map"
+              onclick="openMap('https://maps.app.goo.gl/bjRX7yrBJhZGjefu7')"
+            >
+              Open in Maps
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <img
+          src="/static/images/logo.png"
+          alt="Tourism Logo"
+          class="footer-logo"
+        />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Parbat.html">Kathmandu</a></li>
+          <li><a href="pokhara.html">Pokhara</a></li>
+          <li><a href="Butwal.html">Butwal</a></li>
+          <li><a href="chitwan.html">Chitwan</a></li>
+          <li><a href="Parbat.html">Parbat</a></li>
+          <li><a href="mustang.html">Mustang</a></li>
+          <li><a href="bhaktapur.html">Bhaktapur</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0);" class="dropbtn">Contact Me</a>
+            <div class="dropdown-content">
+              <a href="mailto:neuankit951@gmail.com">Email Us</a>
+              <a href="tel:+9847134287">Call Now</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <p>&copy; 2025 Explore Nepal. All Rights Reserved.</p>
+    </footer>
+    <script>
+      function openMap(url) {
+        window.open(url, "_blank");
+      }
+    </script>
+  </body>
+</html>
